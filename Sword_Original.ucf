@@ -86,8 +86,9 @@
     NET "SW[13]"                                   LOC = AE13      | IOSTANDARD = LVCMOS15 ;
     NET "SW[14]"                                   LOC = AF13      | IOSTANDARD = LVCMOS15 ;
     NET "SW[15]"                                   LOC = AF10      | IOSTANDARD = LVCMOS15 ;
-	 NET "buzzer" LOC = AF24 | IOSTANDARD = LVCMOS33;
-
+	NET "buzzer"                                   LOC = AF25      | IOSTANDARD = LVCMOS33;
+    NET "ps2_clk"                                  LOC = N18       | IOSTANDARD = LVCMOS33;
+    NET "ps2_data"                                 LOC = M19       | IOSTANDARD = LVCMOS33;
 
 
     NET "b[0]"                                 LOC = T20       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;

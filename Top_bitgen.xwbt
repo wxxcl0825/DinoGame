@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/wxxcl/ISE_workspace/DinoGame/Top.ncd
+OUTFILE=/home/wxxcl/ISE_workspace/DinoGame/Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=/home/wxxcl/ISE_workspace/DinoGame
+LICENSE=WebPack
+USER_INFO=212845203_0_0_251

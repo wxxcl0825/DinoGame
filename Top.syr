@@ -1,0 +1,2279 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/SegmentDecoder.v" into library work
+Parsing module <SegmentDecoder>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/ShiftReg.v" into library work
+Parsing module <ShiftReg>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Seg7Remap.v" into library work
+Parsing module <Seg7Remap>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Seg7Decode.v" into library work
+Parsing module <Seg7Decode>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/PS2.v" into library work
+Parsing module <PS2>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/AntiJitter.v" into library work
+Parsing module <AntiJitter>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/vgac.v" into library work
+Parsing module <vgac>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/speedup.v" into library work
+Parsing module <speedup>.
+WARNING:HDLCompiler:751 - "/home/wxxcl/ISE_workspace/DinoGame/speedup.v" Line 25: Redeclaration of ansi port speed is not allowed
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Seg7Device.v" into library work
+Parsing module <Seg7Device>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/night.v" into library work
+Parsing module <night>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Load_Gen.v" into library work
+Parsing module <Load_Gen>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Keypad.v" into library work
+Parsing module <Keypad>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Keyboard.v" into library work
+Parsing module <Keyboard>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/ground.v" into library work
+Parsing module <ground>.
+WARNING:HDLCompiler:568 - "/home/wxxcl/ISE_workspace/DinoGame/ground.v" Line 43: Constant value is truncated to fit in <10> bits.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/grade.v" into library work
+Parsing module <grade>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/gameover.v" into library work
+Parsing module <gameover>.
+WARNING:HDLCompiler:751 - "/home/wxxcl/ISE_workspace/DinoGame/gameover.v" Line 31: Redeclaration of ansi port vga_data is not allowed
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v" into library work
+Parsing module <dinosaur>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/ctrl.v" into library work
+Parsing module <ctrl>.
+WARNING:HDLCompiler:751 - "/home/wxxcl/ISE_workspace/DinoGame/ctrl.v" Line 28: Redeclaration of ansi port show is not allowed
+WARNING:HDLCompiler:751 - "/home/wxxcl/ISE_workspace/DinoGame/ctrl.v" Line 29: Redeclaration of ansi port jump is not allowed
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" into library work
+Parsing module <cloud>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" into library work
+Parsing module <bird_cactus>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/beep.v" into library work
+Parsing module <beep>.
+Analyzing Verilog file "/home/wxxcl/ISE_workspace/DinoGame/Top.v" into library work
+Parsing module <Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 59: Port dbg_keyLine is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 63: Port segment is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 98: Port rdn is not connected to this instance
+
+Elaborating module <Top>.
+
+Elaborating module <AntiJitter(WIDTH=4)>.
+
+Elaborating module <Keypad>.
+WARNING:HDLCompiler:1127 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 59: Assignment to keyCode ignored, since the identifier is never used
+
+Elaborating module <Seg7Device>.
+
+Elaborating module <Seg7Decode>.
+
+Elaborating module <SegmentDecoder>.
+
+Elaborating module <Seg7Remap>.
+
+Elaborating module <ShiftReg(WIDTH=64)>.
+WARNING:HDLCompiler:1016 - "/home/wxxcl/ISE_workspace/DinoGame/Keyboard.v" Line 12: Port ready is not connected to this instance
+
+Elaborating module <Keyboard>.
+
+Elaborating module <PS2>.
+
+Elaborating module <vgac>.
+WARNING:HDLCompiler:604 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 101: Module instantiation should have an instance name
+
+Elaborating module <Load_Gen>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <speedup>.
+
+Elaborating module <ground>.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/ground.v" Line 55: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/ground.v" Line 59: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <cloud>.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" Line 79: Result of 15-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" Line 85: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" Line 87: Result of 15-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" Line 103: Result of 15-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/cloud.v" Line 104: Result of 22-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <dinosaur>.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v" Line 314: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v" Line 338: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v" Line 343: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v" Line 280: Assignment to cnt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 105: Assignment to x ignored, since the identifier is never used
+
+Elaborating module <bird_cactus>.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 290: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 334: Result of 22-bit expression is truncated to fit in 21-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 344: Result of 12-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 345: Result of 15-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 350: Result of 12-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v" Line 351: Result of 15-bit expression is truncated to fit in 9-bit target.
+
+Elaborating module <gameover>.
+WARNING:HDLCompiler:189 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" Line 107: Size mismatch in connection of port <clkdiv>. Formal port size is 33-bit while actual signal size is 32-bit.
+
+Elaborating module <night>.
+
+Elaborating module <ctrl>.
+
+Elaborating module <grade>.
+
+Elaborating module <beep>.
+WARNING:HDLCompiler:413 - "/home/wxxcl/ISE_workspace/DinoGame/beep.v" Line 11: Result of 26-bit expression is truncated to fit in 25-bit target.
+
+Elaborating module <ShiftReg(WIDTH=16)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Top.v".
+WARNING:Xst:647 - Input <rstn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 59: Output port <keyCode> of the instance <k0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 59: Output port <dbg_keyLine> of the instance <k0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 59: Output port <ready> of the instance <k0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 63: Output port <segment> of the instance <segDevice> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 63: Output port <anode> of the instance <segDevice> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 98: Output port <rdn> of the instance <v0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 105: Output port <x> of the instance <dino> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Top.v" line 105: Output port <y> of the instance <dino> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_1_o_add_1_OUT> created at line 52.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Top> synthesized.
+
+Synthesizing Unit <AntiJitter>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/AntiJitter.v".
+        WIDTH = 4
+    Found 4-bit register for signal <cnt>.
+    Found 1-bit register for signal <O>.
+    Found 4-bit subtractor for signal <cnt[3]_GND_2_o_sub_6_OUT> created at line 39.
+    Found 4-bit adder for signal <cnt[3]_GND_2_o_add_2_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <AntiJitter> synthesized.
+
+Synthesizing Unit <Keypad>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Keypad.v".
+    Found 4-bit register for signal <keyLineX>.
+    Found 1-bit register for signal <state>.
+    Found 5-bit register for signal <keyLineY>.
+    Found 1-bit tristate buffer for signal <keyX<3>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<2>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<1>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<0>> created at line 29
+    Found 1-bit tristate buffer for signal <keyY<4>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<3>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<2>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<1>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<0>> created at line 30
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   9 Tristate(s).
+Unit <Keypad> synthesized.
+
+Synthesizing Unit <Seg7Device>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Seg7Device.v".
+    Found 4x4-bit Read Only RAM for signal <anode>
+    Found 8-bit 4-to-1 multiplexer for signal <segment> created at line 36.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Seg7Device> synthesized.
+
+Synthesizing Unit <Seg7Decode>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Seg7Decode.v".
+    Summary:
+	no macro.
+Unit <Seg7Decode> synthesized.
+
+Synthesizing Unit <SegmentDecoder>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/SegmentDecoder.v".
+    Found 16x7-bit Read Only RAM for signal <segment>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SegmentDecoder> synthesized.
+
+Synthesizing Unit <Seg7Remap>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Seg7Remap.v".
+    Summary:
+	no macro.
+Unit <Seg7Remap> synthesized.
+
+Synthesizing Unit <ShiftReg_1>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/ShiftReg.v".
+        WIDTH = 64
+        DELAY = 12
+    Found 1-bit register for signal <oe>.
+    Found 12-bit register for signal <counter>.
+    Found 65-bit register for signal <shift>.
+    Found 12-bit adder for signal <counter[11]_GND_17_o_add_5_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ShiftReg_1> synthesized.
+
+Synthesizing Unit <Keyboard>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Keyboard.v".
+INFO:Xst:3210 - "/home/wxxcl/ISE_workspace/DinoGame/Keyboard.v" line 12: Output port <ready> of the instance <m0> is unconnected or connected to loadless signal.
+    Found 3-bit register for signal <state>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <Keyboard> synthesized.
+
+Synthesizing Unit <PS2>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/PS2.v".
+    Found 1-bit register for signal <ps2_clk_flag1>.
+    Found 1-bit register for signal <ps2_clk_flag2>.
+    Found 4-bit register for signal <num>.
+    Found 1-bit register for signal <negedge_ps2_clk_shift>.
+    Found 8-bit register for signal <temp_data>.
+    Found 1-bit register for signal <data_break>.
+    Found 10-bit register for signal <data>.
+    Found 1-bit register for signal <data_done>.
+    Found 1-bit register for signal <data_expand>.
+    Found 1-bit register for signal <ps2_clk_flag0>.
+    Found 4-bit adder for signal <num[3]_GND_19_o_add_1_OUT> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <PS2> synthesized.
+
+Synthesizing Unit <vgac>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/vgac.v".
+    Found 10-bit register for signal <v_count>.
+    Found 9-bit register for signal <row_addr>.
+    Found 10-bit register for signal <col_addr>.
+    Found 1-bit register for signal <rdn>.
+    Found 1-bit register for signal <hs>.
+    Found 1-bit register for signal <vs>.
+    Found 4-bit register for signal <r>.
+    Found 4-bit register for signal <g>.
+    Found 4-bit register for signal <b>.
+    Found 10-bit register for signal <h_count>.
+    Found 10-bit subtractor for signal <col> created at line 69.
+    Found 10-bit adder for signal <h_count[9]_GND_20_o_add_2_OUT> created at line 44.
+    Found 10-bit adder for signal <v_count[9]_GND_20_o_add_8_OUT> created at line 63.
+    Found 9-bit subtractor for signal <row<8:0>> created at line 68.
+    Found 10-bit comparator greater for signal <h_sync> created at line 70
+    Found 10-bit comparator greater for signal <v_sync> created at line 71
+    Found 10-bit comparator greater for signal <GND_20_o_h_count[9]_LessThan_17_o> created at line 72
+    Found 10-bit comparator greater for signal <h_count[9]_PWR_12_o_LessThan_18_o> created at line 73
+    Found 10-bit comparator greater for signal <GND_20_o_v_count[9]_LessThan_19_o> created at line 74
+    Found 10-bit comparator greater for signal <v_count[9]_PWR_12_o_LessThan_20_o> created at line 75
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <vgac> synthesized.
+
+Synthesizing Unit <Load_Gen>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/Load_Gen.v".
+    Found 1-bit register for signal <old_btn>.
+    Found 1-bit register for signal <Load_out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Load_Gen> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <speedup>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/speedup.v".
+    Found 21-bit register for signal <speed>.
+    Found 32-bit register for signal <count>.
+    Found 21-bit subtractor for signal <speed[20]_GND_23_o_sub_5_OUT> created at line 37.
+    Found 32-bit adder for signal <count[31]_GND_23_o_add_1_OUT> created at line 29.
+    Found 32-bit comparator greater for signal <GND_23_o_count[31]_LessThan_4_o> created at line 34
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <speedup> synthesized.
+
+Synthesizing Unit <ground>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/ground.v".
+        y0 = 9'b100110111
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ground', is tied to its initial value.
+    Found 11-bit register for signal <bais>.
+    Found 21-bit register for signal <cnt>.
+    Found 1-bit register for signal <_vga_data>.
+    Found 9-bit subtractor for signal <y> created at line 42.
+    Found 11-bit adder for signal <GND_24_o_bais[10]_add_1_OUT> created at line 43.
+    Found 21-bit adder for signal <cnt[20]_GND_24_o_add_4_OUT> created at line 55.
+    Found 11-bit adder for signal <bais[10]_GND_24_o_add_8_OUT> created at line 59.
+    Found 65536x1-bit Read Only RAM for signal <y[4]_read_port_6_OUT<0>>
+    Found 9-bit comparator lessequal for signal <y[8]_GND_24_o_LessThan_6_o> created at line 56
+    Found 21-bit comparator equal for signal <cnt[20]_speed[20]_equal_8_o> created at line 57
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ground> synthesized.
+
+Synthesizing Unit <mod_11u_10u>.
+    Related source file is "".
+    Found 21-bit adder for signal <GND_25_o_b[9]_add_1_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_25_o_b[9]_add_3_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_25_o_b[9]_add_5_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_25_o_b[9]_add_7_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_25_o_b[9]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_25_o_b[9]_add_11_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_25_o_b[9]_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_25_o_b[9]_add_15_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_25_o_b[9]_add_17_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_25_o_b[9]_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[9]_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_25_o_add_23_OUT> created at line 0.
+    Found 21-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred 122 Multiplexer(s).
+Unit <mod_11u_10u> synthesized.
+
+Synthesizing Unit <cloud>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/cloud.v".
+        color = 12'b110111011101
+        width = 78
+        height = 24
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'cloud', is tied to its initial value.
+    Found 1-bit register for signal <x<1><6>>.
+    Found 1-bit register for signal <x<1><8>>.
+    Found 21-bit register for signal <cnt>.
+    Found 1-bit register for signal <en<1>>.
+    Found 1-bit register for signal <x<0><9>>.
+    Found 1-bit register for signal <x<0><8>>.
+    Found 1-bit register for signal <x<0><7>>.
+    Found 1-bit register for signal <x<0><6>>.
+    Found 1-bit register for signal <x<0><5>>.
+    Found 1-bit register for signal <x<0><4>>.
+    Found 1-bit register for signal <x<0><3>>.
+    Found 1-bit register for signal <x<0><2>>.
+    Found 1-bit register for signal <x<0><1>>.
+    Found 1-bit register for signal <x<0><0>>.
+    Found 1-bit register for signal <x<1><9>>.
+    Found 1-bit register for signal <x<1><7>>.
+    Found 1-bit register for signal <x<1><5>>.
+    Found 1-bit register for signal <x<1><4>>.
+    Found 1-bit register for signal <x<1><3>>.
+    Found 1-bit register for signal <x<1><2>>.
+    Found 1-bit register for signal <x<1><1>>.
+    Found 1-bit register for signal <x<1><0>>.
+    Found 1-bit register for signal <en<0>>.
+    Found 1-bit register for signal <_vga_data>.
+    Found 1-bit register for signal <y<0><8>>.
+    Found 1-bit register for signal <y<0><7>>.
+    Found 1-bit register for signal <y<0><6>>.
+    Found 1-bit register for signal <y<0><5>>.
+    Found 1-bit register for signal <y<0><4>>.
+    Found 1-bit register for signal <y<0><3>>.
+    Found 1-bit register for signal <y<0><2>>.
+    Found 1-bit register for signal <y<0><1>>.
+    Found 1-bit register for signal <y<0><0>>.
+    Found 1-bit register for signal <y<1><8>>.
+    Found 1-bit register for signal <y<1><7>>.
+    Found 1-bit register for signal <y<1><6>>.
+    Found 1-bit register for signal <y<1><5>>.
+    Found 1-bit register for signal <y<1><4>>.
+    Found 1-bit register for signal <y<1><3>>.
+    Found 1-bit register for signal <y<1><2>>.
+    Found 1-bit register for signal <y<1><1>>.
+    Found 1-bit register for signal <y<1><0>>.
+    Found 10-bit register for signal <random>.
+    Found 10-bit subtractor for signal <_n0300> created at line 97.
+    Found 10-bit subtractor for signal <_n0297> created at line 97.
+    Found 11-bit adder for signal <n0229> created at line 71.
+    Found 10-bit adder for signal <n0233> created at line 71.
+    Found 11-bit adder for signal <n0240> created at line 71.
+    Found 10-bit adder for signal <n0244> created at line 71.
+    Found 9-bit adder for signal <n0271> created at line 78.
+    Found 14-bit adder for signal <n0208> created at line 79.
+    Found 10-bit adder for signal <PWR_21_o_GND_26_o_add_29_OUT> created at line 85.
+    Found 9-bit adder for signal <n0277> created at line 86.
+    Found 14-bit adder for signal <n0216> created at line 87.
+    Found 14-bit adder for signal <n0223> created at line 103.
+    Found 21-bit adder for signal <cnt[20]_GND_26_o_add_45_OUT> created at line 104.
+    Found 5-bit subtractor for signal <row[8]_y[0][8]_sub_8_OUT<4:0>> created at line 72.
+    Found 7-bit subtractor for signal <col[9]_x[0][9]_sub_9_OUT<6:0>> created at line 72.
+    Found 5-bit subtractor for signal <row[8]_y[1][8]_sub_17_OUT<4:0>> created at line 72.
+    Found 7-bit subtractor for signal <col[9]_x[1][9]_sub_18_OUT<6:0>> created at line 72.
+    Found 10x4-bit multiplier for signal <n0272> created at line 79.
+    Found 10x4-bit multiplier for signal <n0278> created at line 87.
+    Found 10x4-bit multiplier for signal <n0280> created at line 103.
+    Found 4096x1-bit Read Only RAM for signal <row[8]_read_port_9_OUT<0>>
+    Found 4096x1-bit Read Only RAM for signal <row[8]_read_port_18_OUT<0>>
+    Found 10-bit comparator lessequal for signal <n0002> created at line 71
+    Found 11-bit comparator greater for signal <GND_26_o_BUS_0001_LessThan_4_o> created at line 71
+    Found 9-bit comparator lessequal for signal <n0008> created at line 71
+    Found 10-bit comparator greater for signal <GND_26_o_BUS_0002_LessThan_7_o> created at line 71
+    Found 10-bit comparator lessequal for signal <n0018> created at line 71
+    Found 11-bit comparator greater for signal <GND_26_o_BUS_0003_LessThan_13_o> created at line 71
+    Found 9-bit comparator lessequal for signal <n0024> created at line 71
+    Found 10-bit comparator greater for signal <GND_26_o_BUS_0004_LessThan_16_o> created at line 71
+    Found 21-bit comparator equal for signal <cnt[20]_speed[20]_equal_36_o> created at line 90
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Multiplier(s).
+	inferred  17 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred  73 Multiplexer(s).
+Unit <cloud> synthesized.
+
+Synthesizing Unit <mod_10u_3u>.
+    Related source file is "".
+    Found 13-bit adder for signal <n0325> created at line 0.
+    Found 13-bit adder for signal <GND_27_o_b[2]_add_1_OUT> created at line 0.
+    Found 12-bit adder for signal <n0329> created at line 0.
+    Found 12-bit adder for signal <GND_27_o_b[2]_add_3_OUT> created at line 0.
+    Found 11-bit adder for signal <n0333> created at line 0.
+    Found 11-bit adder for signal <GND_27_o_b[2]_add_5_OUT> created at line 0.
+    Found 10-bit adder for signal <n0337> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[2]_add_7_OUT> created at line 0.
+    Found 10-bit adder for signal <n0341> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <n0345> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0349> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <n0353> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <n0357> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <n0361> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <n0365> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_27_o_add_21_OUT> created at line 0.
+    Found 13-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_3u> synthesized.
+
+Synthesizing Unit <mod_10u_6u>.
+    Related source file is "".
+    Found 16-bit adder for signal <n0355> created at line 0.
+    Found 16-bit adder for signal <GND_28_o_b[5]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <n0359> created at line 0.
+    Found 15-bit adder for signal <GND_28_o_b[5]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <n0363> created at line 0.
+    Found 14-bit adder for signal <GND_28_o_b[5]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <n0367> created at line 0.
+    Found 13-bit adder for signal <GND_28_o_b[5]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <n0371> created at line 0.
+    Found 12-bit adder for signal <GND_28_o_b[5]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <n0375> created at line 0.
+    Found 11-bit adder for signal <GND_28_o_b[5]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0379> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[5]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <n0383> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_28_o_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <n0387> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_28_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <n0391> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_28_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <n0395> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_28_o_add_21_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_6u> synthesized.
+
+Synthesizing Unit <mod_10u_7u>.
+    Related source file is "".
+    Found 17-bit adder for signal <GND_30_o_b[6]_add_1_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_30_o_b[6]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_30_o_b[6]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_30_o_b[6]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_30_o_b[6]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_30_o_b[6]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_30_o_b[6]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[6]_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_30_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_30_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_30_o_add_21_OUT> created at line 0.
+    Found 17-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_7u> synthesized.
+
+Synthesizing Unit <dinosaur>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/dinosaur.v".
+        max_height = 9'b011001000
+        min_height = 9'b101001001
+        state_height = 27'b100001110011110000011010111
+        dino_speed = 32'b00000010011000100101101000000000
+WARNING:Xst:647 - Input <clkdiv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'dinosaur', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'rom2_data', unconnected in block 'dinosaur', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'down_data', unconnected in block 'dinosaur', is tied to its initial value.
+    Found 21-bit register for signal <count>.
+    Found 32-bit register for signal <dino_count>.
+    Found 9-bit register for signal <y>.
+    Found 1-bit register for signal <jump_flag>.
+    Found 1-bit register for signal <down_flag>.
+    Found 1-bit register for signal <dino_flag>.
+    Found 1-bit register for signal <up_flag>.
+    Found 12-bit register for signal <vga_data>.
+    Found 9-bit subtractor for signal <n0128> created at line 37.
+    Found 9-bit adder for signal <row_add> created at line 37.
+    Found 32-bit adder for signal <dino_count[31]_GND_32_o_add_4_OUT> created at line 306.
+    Found 21-bit adder for signal <count[20]_GND_32_o_add_7_OUT> created at line 314.
+    Found 9-bit adder for signal <y[8]_GND_32_o_add_19_OUT> created at line 343.
+    Found 9-bit subtractor for signal <GND_32_o_GND_32_o_sub_17_OUT<8:0>> created at line 338.
+    Found 10-bit subtractor for signal <col_add> created at line 34.
+    Found 16384x3-bit Read Only RAM for signal <_n16580>
+    Found 9-bit comparator lessequal for signal <n0017> created at line 315
+    Found 9-bit comparator lessequal for signal <n0020> created at line 319
+    Found 9-bit comparator lessequal for signal <n0022> created at line 323
+    Found 9-bit comparator lessequal for signal <n0024> created at line 327
+    Found 21-bit comparator equal for signal <count[20]_GND_32_o_equal_18_o> created at line 340
+    Found 9-bit comparator greater for signal <y[8]_PWR_25_o_LessThan_19_o> created at line 340
+    Found 10-bit comparator greater for signal <col_add[9]_GND_32_o_LessThan_29_o> created at line 353
+    Found 9-bit comparator greater for signal <row_add[8]_GND_32_o_LessThan_30_o> created at line 353
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <dinosaur> synthesized.
+
+Synthesizing Unit <bird_cactus>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/bird_cactus.v".
+        tempvga = 12'b100110011001
+        bird_speed = 21'b000000000000001100100
+WARNING:Xst:647 - Input <clk_div> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'bird_data', unconnected in block 'bird_cactus', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'bird2_data', unconnected in block 'bird_cactus', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'cactus_data', unconnected in block 'bird_cactus', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'cactus2_data', unconnected in block 'bird_cactus', is tied to its initial value.
+    Found 18-bit register for signal <n0237>.
+    Found 21-bit register for signal <count>.
+    Found 1-bit register for signal <crash>.
+    Found 20-bit register for signal <n0234[19:0]>.
+    Found 18-bit register for signal <n0235[17:0]>.
+    Found 21-bit register for signal <bird_count>.
+    Found 1-bit register for signal <bird_flag>.
+    Found 9-bit register for signal <random>.
+    Found 1-bit register for signal <graph_type<0><1>>.
+    Found 1-bit register for signal <graph_type<0><0>>.
+    Found 1-bit register for signal <graph_type<1><1>>.
+    Found 1-bit register for signal <graph_type<1><0>>.
+    Found 12-bit register for signal <vga_data>.
+    Found 20-bit register for signal <n0236>.
+    Found 10-bit subtractor for signal <n0346> created at line 241.
+    Found 9-bit subtractor for signal <n0349> created at line 242.
+    Found 10-bit subtractor for signal <n0352> created at line 246.
+    Found 9-bit subtractor for signal <cactus_height[8]_y[0][8]_sub_19_OUT> created at line 247.
+    Found 10-bit subtractor for signal <n0358> created at line 251.
+    Found 9-bit subtractor for signal <cactus2_height[8]_y[0][8]_sub_23_OUT> created at line 252.
+    Found 9-bit subtractor for signal <n0367> created at line 266.
+    Found 9-bit subtractor for signal <cactus_height[8]_y[1][8]_sub_54_OUT> created at line 271.
+    Found 9-bit subtractor for signal <cactus2_height[8]_y[1][8]_sub_58_OUT> created at line 276.
+    Found 10-bit subtractor for signal <x[0][9]_GND_44_o_sub_92_OUT> created at line 331.
+    Found 10-bit subtractor for signal <x[1][9]_GND_44_o_sub_93_OUT> created at line 332.
+    Found 10-bit adder for signal <bird_width[9]_x[0][9]_add_12_OUT> created at line 241.
+    Found 9-bit adder for signal <bird_height[8]_row[8]_add_14_OUT> created at line 242.
+    Found 10-bit adder for signal <cactus_width[9]_x[0][9]_add_16_OUT> created at line 246.
+    Found 9-bit adder for signal <cactus_height[8]_row[8]_add_17_OUT> created at line 247.
+    Found 10-bit adder for signal <cactus2_width[9]_x[0][9]_add_20_OUT> created at line 251.
+    Found 9-bit adder for signal <cactus2_height[8]_row[8]_add_21_OUT> created at line 252.
+    Found 10-bit adder for signal <bird_width[9]_x[1][9]_add_47_OUT> created at line 265.
+    Found 9-bit adder for signal <bird_height[8]_row[8]_add_49_OUT> created at line 266.
+    Found 10-bit adder for signal <cactus_width[9]_x[1][9]_add_51_OUT> created at line 270.
+    Found 10-bit adder for signal <cactus2_width[9]_x[1][9]_add_55_OUT> created at line 275.
+    Found 21-bit adder for signal <count[20]_GND_44_o_add_77_OUT> created at line 290.
+    Found 21-bit adder for signal <bird_count[20]_GND_44_o_add_93_OUT> created at line 334.
+    Found 11-bit adder for signal <n0383> created at line 344.
+    Found 11-bit adder for signal <n0276> created at line 344.
+    Found 14-bit adder for signal <n0278> created at line 345.
+    Found 11-bit adder for signal <n0391> created at line 350.
+    Found 11-bit adder for signal <n0282> created at line 350.
+    Found 14-bit adder for signal <n0284> created at line 351.
+    Found 9x5-bit multiplier for signal <n0386> created at line 345.
+    Found 9x5-bit multiplier for signal <n0394> created at line 351.
+    Found 4096x1-bit Read Only RAM for signal <row_add[0][5]_read_port_135_OUT<0>>
+    Found 4096x1-bit Read Only RAM for signal <row_add[1][5]_read_port_163_OUT<0>>
+    Found 4x3-bit Read Only RAM for signal <_n0498[0:2]>
+    Found 4x3-bit Read Only RAM for signal <_n0503[0:2]>
+    Found 8192x3-bit Read Only RAM for signal <_n8696>
+    Found 8192x3-bit Read Only RAM for signal <_n16889>
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_23_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_24_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_25_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_26_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_27_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_28_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_29_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_30_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_31_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_width[9]_Mux_32_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_33_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_34_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_35_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_36_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_37_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_38_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_39_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_40_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[0][1]_cactus2_height[8]_Mux_41_o> created at line 233.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_58_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_59_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_60_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_61_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_62_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_63_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_64_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_65_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_66_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_width[9]_Mux_67_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_68_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_69_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_70_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_71_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_72_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_73_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_74_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_75_o> created at line 257.
+    Found 1-bit 3-to-1 multiplexer for signal <graph_type[1][1]_cactus2_height[8]_Mux_76_o> created at line 257.
+    Found 1-bit 4-to-1 multiplexer for signal <graph_type[0][1]_crash_Mux_145_o> created at line 357.
+    Found 12-bit 3-to-1 multiplexer for signal <graph_type[0][1]_PWR_26_o_wide_mux_146_OUT> created at line 357.
+    Found 1-bit 4-to-1 multiplexer for signal <graph_type[0][1]_graph_type[0][1]_Mux_173_o> created at line 448.
+    Found 12-bit 3-to-1 multiplexer for signal <graph_type[0][1]_graph_type[0][1]_wide_mux_174_OUT> created at line 448.
+    Found 21-bit comparator equal for signal <count[20]_speed[20]_equal_91_o> created at line 329
+    Found 10-bit comparator greater for signal <col_add[0][9]_bird_width[9]_LessThan_127_o> created at line 383
+    Found 9-bit comparator greater for signal <row_add[0][8]_bird_height[8]_LessThan_128_o> created at line 383
+    Found 10-bit comparator greater for signal <col_add[0][9]_cactus_width[9]_LessThan_134_o> created at line 404
+    Found 9-bit comparator greater for signal <row_add[0][8]_cactus_height[8]_LessThan_135_o> created at line 404
+    Found 10-bit comparator greater for signal <col_add[0][9]_cactus2_width[9]_LessThan_140_o> created at line 425
+    Found 9-bit comparator greater for signal <row_add[0][8]_cactus2_height[8]_LessThan_141_o> created at line 425
+    Found 10-bit comparator greater for signal <col_add[1][9]_bird_width[9]_LessThan_155_o> created at line 467
+    Found 9-bit comparator greater for signal <row_add[1][8]_bird_height[8]_LessThan_156_o> created at line 467
+    Found 10-bit comparator greater for signal <col_add[1][9]_cactus_width[9]_LessThan_162_o> created at line 481
+    Found 9-bit comparator greater for signal <row_add[1][8]_cactus_height[8]_LessThan_163_o> created at line 481
+    Found 10-bit comparator greater for signal <col_add[1][9]_cactus2_width[9]_LessThan_168_o> created at line 494
+    Found 9-bit comparator greater for signal <row_add[1][8]_cactus2_height[8]_LessThan_169_o> created at line 494
+    Summary:
+	inferred   6 RAM(s).
+	inferred   2 Multiplier(s).
+	inferred  29 Adder/Subtractor(s).
+	inferred 145 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred 123 Multiplexer(s).
+Unit <bird_cactus> synthesized.
+
+Synthesizing Unit <mod_9u_8u>.
+    Related source file is "".
+    Found 17-bit adder for signal <n0337> created at line 0.
+    Found 17-bit adder for signal <GND_45_o_b[7]_add_1_OUT> created at line 0.
+    Found 16-bit adder for signal <n0341> created at line 0.
+    Found 16-bit adder for signal <GND_45_o_b[7]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <n0345> created at line 0.
+    Found 15-bit adder for signal <GND_45_o_b[7]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <n0349> created at line 0.
+    Found 14-bit adder for signal <GND_45_o_b[7]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <n0353> created at line 0.
+    Found 13-bit adder for signal <GND_45_o_b[7]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <n0357> created at line 0.
+    Found 12-bit adder for signal <GND_45_o_b[7]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <n0361> created at line 0.
+    Found 11-bit adder for signal <GND_45_o_b[7]_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <n0365> created at line 0.
+    Found 10-bit adder for signal <GND_45_o_b[7]_add_15_OUT> created at line 0.
+    Found 9-bit adder for signal <n0369> created at line 0.
+    Found 9-bit adder for signal <a[8]_b[7]_add_17_OUT> created at line 0.
+    Found 9-bit adder for signal <n0373> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_45_o_add_19_OUT> created at line 0.
+    Found 17-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Summary:
+	inferred  20 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred  82 Multiplexer(s).
+Unit <mod_9u_8u> synthesized.
+
+Synthesizing Unit <gameover>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/gameover.v".
+WARNING:Xst:647 - Input <clkdiv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'gameover', is tied to its initial value.
+    Found 10-bit subtractor for signal <col_add> created at line 32.
+    Found 9-bit subtractor for signal <row_add> created at line 33.
+    Found 131072x1-bit Read Only RAM for signal <row_add[7]_read_port_8_OUT<0>>
+    Found 10-bit comparator greater for signal <col_add[9]_GND_47_o_LessThan_7_o> created at line 248
+    Found 9-bit comparator greater for signal <row_add[8]_GND_47_o_LessThan_8_o> created at line 248
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <gameover> synthesized.
+
+Synthesizing Unit <night>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/night.v".
+    Found 1-bit register for signal <night>.
+    Found 21-bit register for signal <grade>.
+    Found 12-bit register for signal <vga_data>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_69_o_add_1_OUT> created at line 31.
+    Found 21-bit adder for signal <grade[20]_GND_69_o_add_5_OUT> created at line 41.
+    Found 32-bit comparator greater for signal <GND_69_o_count[31]_LessThan_5_o> created at line 38
+    Found 21-bit comparator greater for signal <GND_69_o_grade[20]_LessThan_9_o> created at line 43
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <night> synthesized.
+
+Synthesizing Unit <ctrl>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/ctrl.v".
+    Found 1-bit register for signal <show>.
+    Found 1-bit register for signal <jump>.
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <crash_flag>.
+    Found 32-bit adder for signal <count[31]_GND_70_o_add_3_OUT> created at line 46.
+    Found 32-bit comparator greater for signal <GND_70_o_count[31]_LessThan_5_o> created at line 47
+    Found 32-bit comparator greater for signal <GND_70_o_count[31]_LessThan_6_o> created at line 51
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <ctrl> synthesized.
+
+Synthesizing Unit <grade>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/grade.v".
+    Found 21-bit register for signal <grade>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_71_o_add_1_OUT> created at line 29.
+    Found 21-bit adder for signal <grade[20]_GND_71_o_add_4_OUT> created at line 37.
+    Found 32-bit comparator greater for signal <GND_71_o_count[31]_LessThan_4_o> created at line 34
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <grade> synthesized.
+
+Synthesizing Unit <mod_21u_4u>.
+    Related source file is "".
+    Found 25-bit adder for signal <n1125> created at line 0.
+    Found 25-bit adder for signal <GND_72_o_b[3]_add_1_OUT> created at line 0.
+    Found 24-bit adder for signal <n1129> created at line 0.
+    Found 24-bit adder for signal <GND_72_o_b[3]_add_3_OUT> created at line 0.
+    Found 23-bit adder for signal <n1133> created at line 0.
+    Found 23-bit adder for signal <GND_72_o_b[3]_add_5_OUT> created at line 0.
+    Found 22-bit adder for signal <n1137> created at line 0.
+    Found 22-bit adder for signal <GND_72_o_b[3]_add_7_OUT> created at line 0.
+    Found 21-bit adder for signal <n1141> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[3]_add_9_OUT> created at line 0.
+    Found 21-bit adder for signal <n1145> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_11_OUT> created at line 0.
+    Found 21-bit adder for signal <n1149> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_13_OUT> created at line 0.
+    Found 21-bit adder for signal <n1153> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_15_OUT> created at line 0.
+    Found 21-bit adder for signal <n1157> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <n1161> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <n1165> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <n1169> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <n1173> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <n1177> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <n1181> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <n1185> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <n1189> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <n1193> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <n1197> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_37_OUT> created at line 0.
+    Found 21-bit adder for signal <n1201> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_39_OUT> created at line 0.
+    Found 21-bit adder for signal <n1205> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_41_OUT> created at line 0.
+    Found 21-bit adder for signal <n1209> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_72_o_add_43_OUT> created at line 0.
+    Found 25-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  44 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 442 Multiplexer(s).
+Unit <mod_21u_4u> synthesized.
+
+Synthesizing Unit <div_21u_4u>.
+    Related source file is "".
+    Found 25-bit adder for signal <GND_73_o_b[3]_add_1_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_73_o_b[3]_add_3_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_73_o_b[3]_add_5_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_73_o_b[3]_add_7_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[3]_add_9_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_11_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_13_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_15_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_37_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_39_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_73_o_add_41_OUT[20:0]> created at line 0.
+    Found 25-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  21 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 381 Multiplexer(s).
+Unit <div_21u_4u> synthesized.
+
+Synthesizing Unit <div_21u_7u>.
+    Related source file is "".
+    Found 28-bit adder for signal <GND_74_o_b[6]_add_1_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_74_o_b[6]_add_3_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_74_o_b[6]_add_5_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_74_o_b[6]_add_7_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_74_o_b[6]_add_9_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_74_o_b[6]_add_11_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_74_o_b[6]_add_13_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[6]_add_15_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_37_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_39_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_74_o_add_41_OUT[20:0]> created at line 0.
+    Found 28-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  21 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 381 Multiplexer(s).
+Unit <div_21u_7u> synthesized.
+
+Synthesizing Unit <div_21u_10u>.
+    Related source file is "".
+    Found 31-bit adder for signal <GND_75_o_b[9]_add_1_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_75_o_b[9]_add_3_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_75_o_b[9]_add_5_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_75_o_b[9]_add_7_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_75_o_b[9]_add_9_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_75_o_b[9]_add_11_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_75_o_b[9]_add_13_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_75_o_b[9]_add_15_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_75_o_b[9]_add_17_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_75_o_b[9]_add_19_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_b[9]_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_23_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_27_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_29_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_31_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_33_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_35_OUT> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_37_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_39_OUT[20:0]> created at line 0.
+    Found 21-bit adder for signal <a[20]_GND_75_o_add_41_OUT[20:0]> created at line 0.
+    Found 31-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  21 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 381 Multiplexer(s).
+Unit <div_21u_10u> synthesized.
+
+Synthesizing Unit <beep>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/beep.v".
+    Found 1-bit register for signal <buzzer>.
+    Found 25-bit register for signal <cnt>.
+    Found 25-bit adder for signal <cnt[24]_GND_76_o_add_1_OUT> created at line 11.
+    Found 25-bit comparator greater for signal <n0001> created at line 12
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <beep> synthesized.
+
+Synthesizing Unit <ShiftReg_2>.
+    Related source file is "/home/wxxcl/ISE_workspace/DinoGame/ShiftReg.v".
+        WIDTH = 16
+        DELAY = 12
+    Found 1-bit register for signal <oe>.
+    Found 12-bit register for signal <counter>.
+    Found 17-bit register for signal <shift>.
+    Found 12-bit adder for signal <counter[11]_GND_77_o_add_5_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ShiftReg_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 20
+ 131072x1-bit single-port Read Only RAM                : 1
+ 16384x3-bit single-port Read Only RAM                 : 1
+ 16x7-bit single-port Read Only RAM                    : 8
+ 4096x1-bit single-port Read Only RAM                  : 4
+ 4x3-bit single-port Read Only RAM                     : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+ 65536x1-bit single-port Read Only RAM                 : 1
+ 8192x3-bit single-port Read Only RAM                  : 2
+# Multipliers                                          : 5
+ 10x4-bit multiplier                                   : 3
+ 9x5-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 481
+ 10-bit adder                                          : 71
+ 10-bit subtractor                                     : 10
+ 11-bit adder                                          : 23
+ 12-bit adder                                          : 16
+ 13-bit adder                                          : 14
+ 14-bit adder                                          : 15
+ 15-bit adder                                          : 10
+ 16-bit adder                                          : 10
+ 17-bit adder                                          : 6
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 194
+ 21-bit subtractor                                     : 1
+ 22-bit adder                                          : 11
+ 23-bit adder                                          : 11
+ 24-bit adder                                          : 11
+ 25-bit adder                                          : 12
+ 26-bit adder                                          : 2
+ 27-bit adder                                          : 2
+ 28-bit adder                                          : 2
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 1
+ 4-bit addsub                                          : 17
+ 5-bit subtractor                                      : 2
+ 7-bit subtractor                                      : 2
+ 9-bit adder                                           : 15
+ 9-bit addsub                                          : 1
+ 9-bit subtractor                                      : 10
+# Registers                                            : 133
+ 1-bit register                                        : 68
+ 10-bit register                                       : 5
+ 11-bit register                                       : 1
+ 12-bit register                                       : 5
+ 17-bit register                                       : 1
+ 18-bit register                                       : 2
+ 2-bit register                                        : 2
+ 20-bit register                                       : 2
+ 21-bit register                                       : 8
+ 25-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 6
+ 4-bit register                                        : 22
+ 5-bit register                                        : 1
+ 65-bit register                                       : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 5
+# Comparators                                          : 288
+ 10-bit comparator greater                             : 16
+ 10-bit comparator lessequal                           : 34
+ 11-bit comparator greater                             : 2
+ 11-bit comparator lessequal                           : 9
+ 12-bit comparator lessequal                           : 8
+ 13-bit comparator lessequal                           : 8
+ 14-bit comparator lessequal                           : 6
+ 15-bit comparator lessequal                           : 6
+ 16-bit comparator lessequal                           : 6
+ 17-bit comparator lessequal                           : 4
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator equal                               : 4
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 118
+ 22-bit comparator lessequal                           : 7
+ 23-bit comparator lessequal                           : 7
+ 24-bit comparator lessequal                           : 7
+ 25-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 7
+ 26-bit comparator lessequal                           : 2
+ 27-bit comparator lessequal                           : 2
+ 28-bit comparator lessequal                           : 2
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 5
+ 9-bit comparator greater                              : 9
+ 9-bit comparator lessequal                            : 11
+# Multiplexers                                         : 3926
+ 1-bit 2-to-1 multiplexer                              : 3826
+ 1-bit 3-to-1 multiplexer                              : 38
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 4
+ 12-bit 2-to-1 multiplexer                             : 16
+ 12-bit 3-to-1 multiplexer                             : 2
+ 17-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 21-bit 2-to-1 multiplexer                             : 17
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 2
+ 65-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 2
+# Tristates                                            : 9
+ 1-bit tristate buffer                                 : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <segDevice>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <rdyFilter> is unconnected in block <k0>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <y_1_2> in Unit <bc> is equivalent to the following FF/Latch, which will be removed : <y_1_7> 
+INFO:Xst:2261 - The FF/Latch <y_1_0> in Unit <bc> is equivalent to the following 2 FFs/Latches, which will be removed : <y_1_1> <y_1_6> 
+INFO:Xst:2261 - The FF/Latch <y_1_11> in Unit <bc> is equivalent to the following FF/Latch, which will be removed : <y_1_16> 
+INFO:Xst:2261 - The FF/Latch <y_1_9> in Unit <bc> is equivalent to the following 2 FFs/Latches, which will be removed : <y_1_10> <y_1_15> 
+INFO:Xst:2261 - The FF/Latch <y_1_5> in Unit <bc> is equivalent to the following FF/Latch, which will be removed : <y_1_14> 
+INFO:Xst:2261 - The FF/Latch <y_1_3> in Unit <bc> is equivalent to the following FF/Latch, which will be removed : <y_1_12> 
+WARNING:Xst:1710 - FF/Latch <y_1_3> (without init value) has a constant value of 1 in block <bc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <y_1_5> (without init value) has a constant value of 0 in block <bc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_expand> of sequential type is unconnected in block <m0>.
+WARNING:Xst:2677 - Node <data_9> of sequential type is unconnected in block <m0>.
+
+Synthesizing (advanced) Unit <AntiJitter>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <AntiJitter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PS2>.
+The following registers are absorbed into counter <num>: 1 register on signal <num>.
+Unit <PS2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Seg7Device>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_anode> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clkScan>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <anode>         |          |
+    -----------------------------------------------------------------------
+Unit <Seg7Device> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SegmentDecoder>.
+INFO:Xst:3231 - The small RAM <Mram_segment> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segment>       |          |
+    -----------------------------------------------------------------------
+Unit <SegmentDecoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ShiftReg_1>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ShiftReg_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ShiftReg_2>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ShiftReg_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Top>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+INFO:Xst:3226 - The RAM <gnd/Mram_y[4]_read_port_6_OUT<0>> will be implemented as a BLOCK RAM, absorbing the following register(s): <gnd/_vga_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 1-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <KEY_RESTART>   | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(gnd/y<4:0>,"0",gnd/x)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <gnd/_vga_data> |          |
+    |     dorstA         | connected to internal node          | high     |
+    | reset value        | 0                                              |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <dino/Mram__n16580> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 3-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(dino/row_add<6:0>,dino/col_add<6:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram__n0503[0:2]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bc/graph_type<1>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram__n0498[0:2]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bc/graph_type<0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram__n16889> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(bc/n0237<5:0>,bc/n0236<6:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram_row_add[1][5]_read_port_163_OUT<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(bc/n0237<5:0>,bc/n0236<5:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram__n8696> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 3-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(bc/n0237<14:9>,bc/n0236<16:10>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <bc/Mram_row_add[0][5]_read_port_135_OUT<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(bc/n0237<14:9>,bc/n0236<15:10>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <gameover/Mram_row_add[7]_read_port_8_OUT<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 131072-word x 1-bit                 |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(gameover/row_add<7:0>,gameover/col_add<8:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <beep>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <beep> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bird_cactus>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <bird_count>: 1 register on signal <bird_count>.
+	Multiplier <Mmult_n0386> in block <bird_cactus> and adder/subtractor <Madd_n0278_Madd> in block <bird_cactus> are combined into a MAC<Maddsub_n0386>.
+	Multiplier <Mmult_n0394> in block <bird_cactus> and adder/subtractor <Madd_n0284_Madd> in block <bird_cactus> are combined into a MAC<Maddsub_n0394>.
+Unit <bird_cactus> synthesized (advanced).
+
+Synthesizing (advanced) Unit <cloud>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+	Multiplier <Mmult_n0280> in block <cloud> and adder/subtractor <Madd_n0223_Madd> in block <cloud> are combined into a MAC<Maddsub_n0280>.
+	The following registers are also absorbed by the MAC: <random> in block <cloud>.
+	Multiplier <Mmult_n0278> in block <cloud> and adder/subtractor <Madd_n0216_Madd> in block <cloud> are combined into a MAC<Maddsub_n0278>.
+	Multiplier <Mmult_n0272> in block <cloud> and adder/subtractor <Madd_n0208_Madd> in block <cloud> are combined into a MAC<Maddsub_n0272>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_row[8]_read_port_9_OUT<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(row[8]_y[0][8]_sub_8_OUT,col[9]_x[0][9]_sub_9_OUT)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_row[8]_read_port_18_OUT<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 1-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(row[8]_y[1][8]_sub_17_OUT,col[9]_x[1][9]_sub_18_OUT)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <cloud> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dinosaur>.
+The following registers are absorbed into counter <dino_count>: 1 register on signal <dino_count>.
+The following registers are absorbed into counter <y>: 1 register on signal <y>.
+Unit <dinosaur> synthesized (advanced).
+
+Synthesizing (advanced) Unit <grade>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <grade>: 1 register on signal <grade>.
+Unit <grade> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ground>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <bais>: 1 register on signal <bais>.
+Unit <ground> synthesized (advanced).
+
+Synthesizing (advanced) Unit <night>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <grade>: 1 register on signal <grade>.
+Unit <night> synthesized (advanced).
+
+Synthesizing (advanced) Unit <speedup>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into accumulator <speed>: 1 register on signal <speed>.
+Unit <speedup> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vgac>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
+Unit <vgac> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 20
+ 131072x1-bit single-port distributed Read Only RAM    : 1
+ 16384x3-bit single-port distributed Read Only RAM     : 1
+ 16x7-bit single-port distributed Read Only RAM        : 8
+ 4096x1-bit single-port distributed Read Only RAM      : 4
+ 4x3-bit single-port distributed Read Only RAM         : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 65536x1-bit single-port block Read Only RAM           : 1
+ 8192x3-bit single-port distributed Read Only RAM      : 2
+# MACs                                                 : 5
+ 10x4-to-10-bit MAC                                    : 3
+ 9x5-to-9-bit MAC                                      : 2
+# Adders/Subtractors                                   : 288
+ 10-bit adder                                          : 24
+ 10-bit adder carry in                                 : 40
+ 10-bit subtractor                                     : 10
+ 11-bit adder                                          : 14
+ 21-bit adder                                          : 64
+ 21-bit adder carry in                                 : 84
+ 3-bit adder carry in                                  : 2
+ 32-bit adder                                          : 2
+ 4-bit adder carry in                                  : 4
+ 5-bit subtractor                                      : 2
+ 6-bit adder carry in                                  : 2
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 2
+ 8-bit adder carry in                                  : 2
+ 9-bit adder                                           : 7
+ 9-bit adder carry in                                  : 18
+ 9-bit subtractor                                      : 10
+# Counters                                             : 36
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 2
+ 21-bit up counter                                     : 6
+ 25-bit up counter                                     : 1
+ 32-bit up counter                                     : 5
+ 4-bit up counter                                      : 1
+ 4-bit updown counter                                  : 17
+ 9-bit updown counter                                  : 1
+# Accumulators                                         : 1
+ 21-bit down accumulator                               : 1
+# Registers                                            : 413
+ Flip-Flops                                            : 413
+# Comparators                                          : 288
+ 10-bit comparator greater                             : 16
+ 10-bit comparator lessequal                           : 34
+ 11-bit comparator greater                             : 2
+ 11-bit comparator lessequal                           : 9
+ 12-bit comparator lessequal                           : 8
+ 13-bit comparator lessequal                           : 8
+ 14-bit comparator lessequal                           : 6
+ 15-bit comparator lessequal                           : 6
+ 16-bit comparator lessequal                           : 6
+ 17-bit comparator lessequal                           : 4
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator equal                               : 4
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 118
+ 22-bit comparator lessequal                           : 7
+ 23-bit comparator lessequal                           : 7
+ 24-bit comparator lessequal                           : 7
+ 25-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 7
+ 26-bit comparator lessequal                           : 2
+ 27-bit comparator lessequal                           : 2
+ 28-bit comparator lessequal                           : 2
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 5
+ 9-bit comparator greater                              : 9
+ 9-bit comparator lessequal                            : 11
+# Multiplexers                                         : 4019
+ 1-bit 2-to-1 multiplexer                              : 3929
+ 1-bit 3-to-1 multiplexer                              : 38
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+ 12-bit 2-to-1 multiplexer                             : 14
+ 12-bit 3-to-1 multiplexer                             : 2
+ 20-bit 2-to-1 multiplexer                             : 1
+ 21-bit 2-to-1 multiplexer                             : 14
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 2
+ 7-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <bc/y_1_3> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/y_1_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/y_1_12> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/y_1_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <bc/y_1_2> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <bc/y_1_7> 
+INFO:Xst:2261 - The FF/Latch <bc/y_1_0> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <bc/y_1_1> <bc/y_1_6> 
+INFO:Xst:2261 - The FF/Latch <bc/y_1_11> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <bc/y_1_16> 
+INFO:Xst:2261 - The FF/Latch <bc/y_1_9> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <bc/y_1_10> <bc/y_1_15> 
+WARNING:Xst:1426 - The value init of the FF/Latch y<0>_1 hinder the constant cleaning in the block cloud.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch y<1>_1 hinder the constant cleaning in the block cloud.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <y<1>_0> has a constant value of 0 in block <cloud>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <y<0>_0> has a constant value of 0 in block <cloud>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <random[9]_PWR_21_o_mod_19/Madd_GND_27_o_b[2]_add_1_OUT_Madd_Madd1> of sequential type is unconnected in block <cloud>.
+WARNING:Xst:1710 - FF/Latch <speedup/speed_0> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <speedup/speed_1> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <speedup/speed_2> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <speedup/speed_3> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <speedup/speed_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <clkdiv_26> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_27> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_28> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_29> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_30> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_31> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/rdyFilter/cnt_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/rdyFilter/cnt_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/rdyFilter/cnt_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/rdyFilter/cnt_0> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/rdyFilter/O> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineY_4> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineY_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineY_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineY_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineY_0> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineX_3> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineX_2> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineX_1> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <k0/keyLineX_0> of sequential type is unconnected in block <Top>.
+
+Optimizing unit <Top> ...
+
+Optimizing unit <PS2> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <cloud> ...
+
+Optimizing unit <mod_10u_7u> ...
+
+Optimizing unit <mod_9u_8u> ...
+
+Optimizing unit <night> ...
+
+Optimizing unit <ctrl> ...
+
+Optimizing unit <grade> ...
+
+Optimizing unit <mod_21u_4u> ...
+
+Optimizing unit <beep> ...
+
+Optimizing unit <Seg7Device> ...
+
+Optimizing unit <ShiftReg_1> ...
+
+Optimizing unit <ShiftReg_2> ...
+WARNING:Xst:1710 - FF/Latch <dino/vga_data_0> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dino/vga_data_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dino/vga_data_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/vga_data_0> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/vga_data_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bc/vga_data_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <clkdiv_18> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_19> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_20> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_21> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_22> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_23> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_24> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <clkdiv_25> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <keyDevice/m0/data_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <keyDevice/m0/data_expand> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <keyDevice/m0/data_done> of sequential type is unconnected in block <Top>.
+WARNING:Xst:1293 - FF/Latch <night/count_27> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/count_26> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_31> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_30> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_29> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_28> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_27> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ctrl/count_26> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_31> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_30> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_29> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_28> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_27> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <grade/count_26> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_24> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_23> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_22> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_21> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_20> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_19> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <beepDevice/cnt_18> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <speedup/count_29> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <speedup/count_30> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <speedup/count_31> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_20> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_19> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_18> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_17> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_16> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_15> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_14> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_13> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_12> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_11> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_10> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_9> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_8> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_7> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/grade_6> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/count_31> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/count_30> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/count_29> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <night/count_28> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dino/vga_data_1> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <dino/vga_data_5> <dino/vga_data_9> 
+INFO:Xst:2261 - The FF/Latch <dino/vga_data_2> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <dino/vga_data_6> <dino/vga_data_10> 
+INFO:Xst:2261 - The FF/Latch <dino/vga_data_3> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <dino/vga_data_7> <dino/vga_data_11> 
+INFO:Xst:2261 - The FF/Latch <night/vga_data_10> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <night/vga_data_6> <night/vga_data_2> 
+INFO:Xst:2261 - The FF/Latch <night/vga_data_11> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <night/vga_data_7> <night/vga_data_3> 
+INFO:Xst:2261 - The FF/Latch <bc/vga_data_1> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <bc/vga_data_5> <bc/vga_data_9> 
+INFO:Xst:2261 - The FF/Latch <bc/vga_data_2> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <bc/vga_data_6> <bc/vga_data_10> 
+INFO:Xst:2261 - The FF/Latch <bc/vga_data_3> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <bc/vga_data_7> <bc/vga_data_11> 
+INFO:Xst:2261 - The FF/Latch <night/vga_data_8> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <night/vga_data_4> <night/vga_data_0> 
+INFO:Xst:2261 - The FF/Latch <night/vga_data_9> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <night/vga_data_5> <night/vga_data_1> 
+INFO:Xst:3203 - The FF/Latch <dino/y_8> in Unit <Top> is the opposite to the following FF/Latch, which will be removed : <dino/y_7> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <v0/g_3> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <v0/b_3> <v0/r_3> 
+INFO:Xst:2261 - The FF/Latch <v0/g_2> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <v0/b_2> <v0/r_2> 
+INFO:Xst:2261 - The FF/Latch <v0/g_1> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <v0/b_1> <v0/r_1> 
+INFO:Xst:2261 - The FF/Latch <v0/g_0> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <v0/b_0> <v0/r_0> 
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 7.
+
+Final Macro Processing ...
+
+Processing Unit <Top> :
+	Found 2-bit shift register for signal <keyDevice/m0/ps2_clk_flag1>.
+Unit <Top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 753
+ Flip-Flops                                            : 753
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10041
+#      GND                         : 1
+#      INV                         : 121
+#      LUT1                        : 286
+#      LUT2                        : 367
+#      LUT3                        : 851
+#      LUT4                        : 697
+#      LUT5                        : 1669
+#      LUT6                        : 2605
+#      MUXCY                       : 1690
+#      MUXF7                       : 176
+#      VCC                         : 1
+#      XORCY                       : 1577
+# FlipFlops/Latches                : 754
+#      FD                          : 120
+#      FDC                         : 94
+#      FDCE                        : 48
+#      FDE                         : 231
+#      FDP                         : 2
+#      FDPE                        : 4
+#      FDR                         : 165
+#      FDRE                        : 79
+#      FDSE                        : 11
+# RAMS                             : 2
+#      RAMB36E1                    : 2
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 50
+#      IBUF                        : 18
+#      OBUF                        : 23
+#      OBUFT                       : 9
+# DSPs                             : 2
+#      DSP48E1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             754  out of  202800     0%  
+ Number of Slice LUTs:                 6597  out of  101400     6%  
+    Number used as Logic:              6596  out of  101400     6%  
+    Number used as Memory:                1  out of  35000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6636
+   Number with an unused Flip Flop:    5882  out of   6636    88%  
+   Number with an unused LUT:            39  out of   6636     0%  
+   Number of fully used LUT-FF pairs:   715  out of   6636    10%  
+   Number of unique control sets:        81
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  51  out of    400    12%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    325     0%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+ Number of DSP48E1s:                      2  out of    600     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+clk                                | BUFGP                      | 516   |
+clkdiv_1                           | BUFG                       | 46    |
+clkdiv_15                          | BUFG                       | 81    |
+clkdiv_17                          | NONE(_i000004/p0/pbshift_6)| 8     |
+clkdiv_3                           | BUFG                       | 108   |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------+---------------------------------------+-------+
+Control Signal                                    | Buffer(FF name)                       | Load  |
+--------------------------------------------------+---------------------------------------+-------+
+N13(gnd/Mram_y[4]_read_port_6_OUT<0>1:CASCADEOUTA)| NONE(gnd/Mram_y[4]_read_port_6_OUT<0>)| 1     |
+--------------------------------------------------+---------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 11.609ns (Maximum Frequency: 86.137MHz)
+   Minimum input arrival time before clock: 1.663ns
+   Maximum output required time after clock: 2.927ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.609ns (frequency: 86.137MHz)
+  Total number of paths / destination ports: 169143496 / 1011
+-------------------------------------------------------------------------
+Delay:               11.609ns (Levels of Logic = 13)
+  Source:            cld/Maddsub_n0280 (DSP)
+  Destination:       cld/Maddsub_n0280 (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cld/Maddsub_n0280 to cld/Maddsub_n0280
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->P5      25   0.383   0.890  cld/Maddsub_n0280 (cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_11_OUT_Madd_cy<5>)
+     LUT6:I0->O            1   0.053   0.000  cld/random[9]_PWR_21_o_mod_19/BUS_0008_INV_363_o11_G (N554)
+     MUXF7:I1->O           5   0.217   0.629  cld/random[9]_PWR_21_o_mod_19/BUS_0008_INV_363_o11 (cld/random[9]_PWR_21_o_mod_19/BUS_0008_INV_363_o)
+     LUT6:I3->O            1   0.053   0.399  cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_19_OUT_Madd_cy<8>111 (cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_19_OUT_Madd_cy<8>111)
+     MUXF7:S->O           21   0.280   0.543  cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_19_OUT_Madd_cy<8>114 (cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_19_OUT_Madd_cy<8>11)
+     LUT6:I5->O            2   0.053   0.491  cld/random[9]_PWR_21_o_mod_19/BUS_0011_INV_396_o14 (cld/random[9]_PWR_21_o_mod_19/BUS_0011_INV_396_o15)
+     LUT6:I4->O           12   0.053   0.485  cld/random[9]_PWR_21_o_mod_19/BUS_0011_INV_396_o18_SW0 (N282)
+     LUT6:I5->O           36   0.053   0.788  cld/Mmux_random[9]_random[9]_mux_25_OUT61 (cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_11_OUT_Madd_cy<5>)
+     LUT6:I2->O            1   0.053   0.602  cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4>11_SW2 (N365)
+     LUT5:I2->O            1   0.053   0.413  cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4>11 (cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4>1)
+     LUT5:I4->O            2   0.053   0.419  cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4>12 (cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4>)
+     LUT6:I5->O            8   0.053   0.459  cld/random[9]_PWR_21_o_mod_26/BUS_0011_INV_396_o14 (cld/random[9]_PWR_21_o_mod_26/BUS_0011_INV_396_o14)
+     LUT6:I5->O            2   0.053   0.405  cld/en[1]_GND_26_o_AND_154_o4_1 (cld/en[1]_GND_26_o_AND_154_o4)
+     MUXF7:S->O            1   0.280   0.399  cld/Mmux_random[9]_random[9]_mux_34_OUT71 (cld/random[9]_random[9]_mux_34_OUT<6>)
+     DSP48E1:B6                2.997          cld/Maddsub_n0280
+    ----------------------------------------
+    Total                     11.609ns (4.687ns logic, 6.922ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_1'
+  Clock period: 3.102ns (frequency: 322.373MHz)
+  Total number of paths / destination ports: 903 / 66
+-------------------------------------------------------------------------
+Delay:               3.102ns (Levels of Logic = 3)
+  Source:            v0/v_count_5 (FF)
+  Destination:       v0/rdn (FF)
+  Source Clock:      clkdiv_1 rising
+  Destination Clock: clkdiv_1 rising
+
+  Data Path: v0/v_count_5 to v0/rdn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.282   0.758  v0/v_count_5 (v0/v_count_5)
+     LUT5:I0->O            5   0.053   0.766  v0/v_count[9]_PWR_12_o_equal_8_o<9>21 (v0/v_count[9]_PWR_12_o_equal_8_o<9>2)
+     LUT6:I0->O            1   0.053   0.413  v0/read4 (v0/read4)
+     LUT3:I2->O            1   0.053   0.399  v0/read5 (v0/read)
+     FDR:R                     0.325          v0/rdn
+    ----------------------------------------
+    Total                      3.102ns (0.766ns logic, 2.336ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_15'
+  Clock period: 1.714ns (frequency: 583.431MHz)
+  Total number of paths / destination ports: 561 / 161
+-------------------------------------------------------------------------
+Delay:               1.714ns (Levels of Logic = 1)
+  Source:            a0<15>/cnt_3 (FF)
+  Destination:       a0<15>/O (FF)
+  Source Clock:      clkdiv_15 rising
+  Destination Clock: clkdiv_15 rising
+
+  Data Path: a0<15>/cnt_3 to a0<15>/O
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.282   0.655  a0<15>/cnt_3 (a0<15>/cnt_3)
+     LUT5:I1->O            1   0.053   0.399  a0<15>/_n00231 (a0<15>/_n0023)
+     FDR:R                     0.325          a0<15>/O
+    ----------------------------------------
+    Total                      1.714ns (0.660ns logic, 1.054ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_17'
+  Clock period: 2.141ns (frequency: 467.071MHz)
+  Total number of paths / destination ports: 21 / 8
+-------------------------------------------------------------------------
+Delay:               2.141ns (Levels of Logic = 2)
+  Source:            _i000004/p0/pbshift_3 (FF)
+  Destination:       _i000004/p0/pbreg (FF)
+  Source Clock:      clkdiv_17 rising
+  Destination Clock: clkdiv_17 rising
+
+  Data Path: _i000004/p0/pbshift_3 to _i000004/p0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.616  _i000004/p0/pbshift_3 (_i000004/p0/pbshift_3)
+     LUT3:I0->O            1   0.053   0.413  _i000004/p0/_n0011_SW0 (N129)
+     LUT6:I5->O            1   0.053   0.399  _i000004/p0/_n0011 (_i000004/p0/_n0011)
+     FDR:R                     0.325          _i000004/p0/pbreg
+    ----------------------------------------
+    Total                      2.141ns (0.713ns logic, 1.428ns route)
+                                       (33.3% logic, 66.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_3'
+  Clock period: 3.161ns (frequency: 316.356MHz)
+  Total number of paths / destination ports: 11148 / 216
+-------------------------------------------------------------------------
+Delay:               3.161ns (Levels of Logic = 3)
+  Source:            ledDevice/shift_7 (FF)
+  Destination:       ledDevice/shift_16 (FF)
+  Source Clock:      clkdiv_3 rising
+  Destination Clock: clkdiv_3 rising
+
+  Data Path: ledDevice/shift_7 to ledDevice/shift_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.282   0.745  ledDevice/shift_7 (ledDevice/shift_7)
+     LUT6:I0->O            2   0.053   0.745  ledDevice/out11 (ledDevice/out1)
+     LUT6:I0->O           18   0.053   0.525  ledDevice/out13 (ledDevice/sckEn)
+     LUT3:I2->O           17   0.053   0.505  ledDevice/_n0033_inv1 (ledDevice/_n0033_inv)
+     FDE:CE                    0.200          ledDevice/shift_0
+    ----------------------------------------
+    Total                      3.161ns (0.641ns logic, 2.520ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 78 / 78
+-------------------------------------------------------------------------
+Offset:              1.573ns (Levels of Logic = 2)
+  Source:            SW<1> (PAD)
+  Destination:       dino/up_flag (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW<1> to dino/up_flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            72   0.000   0.796  SW_1_IBUF (SW_1_IBUF)
+     LUT5:I1->O            1   0.053   0.399  dino/_n01501 (dino/_n0150)
+     FDSE:S                    0.325          dino/up_flag
+    ----------------------------------------
+    Total                      1.573ns (0.378ns logic, 1.195ns route)
+                                       (24.0% logic, 76.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv_15'
+  Total number of paths / destination ports: 144 / 144
+-------------------------------------------------------------------------
+Offset:              1.663ns (Levels of Logic = 2)
+  Source:            SW<1> (PAD)
+  Destination:       a0<1>/O (FF)
+  Destination Clock: clkdiv_15 rising
+
+  Data Path: SW<1> to a0<1>/O
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            72   0.000   0.886  SW_1_IBUF (SW_1_IBUF)
+     LUT5:I0->O            1   0.053   0.399  a0<1>/_n00231 (a0<1>/_n0023)
+     FDR:R                     0.325          a0<1>/O
+    ----------------------------------------
+    Total                      1.663ns (0.378ns logic, 1.285ns route)
+                                       (22.7% logic, 77.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.695ns (Levels of Logic = 1)
+  Source:            v0/g_3 (FF)
+  Destination:       r<3> (PAD)
+  Source Clock:      clkdiv_1 rising
+
+  Data Path: v0/g_3 to r<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.282   0.413  v0/g_3 (v0/g_3)
+     OBUF:I->O                 0.000          b_3_OBUF (b<3>)
+    ----------------------------------------
+    Total                      0.695ns (0.282ns logic, 0.413ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_15'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              1.207ns (Levels of Logic = 2)
+  Source:            k0/state (FF)
+  Destination:       BTN_Y<3> (PAD)
+  Source Clock:      clkdiv_15 rising
+
+  Data Path: k0/state to BTN_Y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.282   0.432  k0/state (k0/state)
+     INV:I->O              5   0.067   0.426  k0/state_inv1_INV_0 (k0/state_inv)
+     OBUFT:T->O                0.000          BTN_Y_3_OBUFT (BTN_Y<3>)
+    ----------------------------------------
+    Total                      1.207ns (0.349ns logic, 0.858ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_3'
+  Total number of paths / destination ports: 84 / 6
+-------------------------------------------------------------------------
+Offset:              2.927ns (Levels of Logic = 4)
+  Source:            ledDevice/shift_7 (FF)
+  Destination:       LED_CLK (PAD)
+  Source Clock:      clkdiv_3 rising
+
+  Data Path: ledDevice/shift_7 to LED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.282   0.745  ledDevice/shift_7 (ledDevice/shift_7)
+     LUT6:I0->O            2   0.053   0.745  ledDevice/out11 (ledDevice/out1)
+     LUT6:I0->O           18   0.053   0.597  ledDevice/out13 (ledDevice/sckEn)
+     LUT2:I0->O            1   0.053   0.399  ledDevice/sck1 (LED_CLK_OBUF)
+     OBUF:I->O                 0.000          LED_CLK_OBUF (LED_CLK)
+    ----------------------------------------
+    Total                      2.927ns (0.441ns logic, 2.486ns route)
+                                       (15.1% logic, 84.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.161ns (Levels of Logic = 2)
+  Source:            clkdiv_3 (FF)
+  Destination:       SEGLED_CLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clkdiv_3 to SEGLED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.427  clkdiv_3 (clkdiv_3)
+     LUT2:I1->O            1   0.053   0.399  segDevice/U2/sck1 (SEGLED_CLK_OBUF)
+     OBUF:I->O                 0.000          SEGLED_CLK_OBUF (SEGLED_CLK)
+    ----------------------------------------
+    Total                      1.161ns (0.335ns logic, 0.826ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.609|         |         |         |
+clkdiv_1       |   19.552|         |         |         |
+clkdiv_17      |    0.845|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.692|         |         |         |
+clkdiv_1       |    3.102|         |         |         |
+clkdiv_15      |    1.877|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_15
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv_15      |    1.714|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_17
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.074|         |         |         |
+clkdiv_17      |    2.141|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_3
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   38.004|         |         |         |
+clkdiv_15      |    0.851|         |         |         |
+clkdiv_3       |    3.161|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 58.00 secs
+Total CPU time to Xst completion: 48.16 secs
+ 
+--> 
+
+
+Total memory usage is 529432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+

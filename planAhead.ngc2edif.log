@@ -1,0 +1,216 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Top.ngc ...
+WARNING:NetListWriters:298 - No output is written to Top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus dino/GND_32_o_GND_32_o_mux_14_OUT<13 :
+   8> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/random[8]_random[8]_mux_105_OUT<6 :
+   1> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/random[8]_PWR_26_o_mod_101_OUT<7 : 0>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/y_1<17 : 0> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus bc/cactus2_height[8]_row[8]_add_21_OUT<7
+   : 1> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/cactus_height[8]_row[8]_add_17_OUT<8
+   : 4> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/Msub_x[1][9]_GND_44_o_sub_93_OUT_cy<6
+   : 2> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/Msub_x[0][9]_GND_44_o_sub_92_OUT_cy<6
+   : 2> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus bc/Msub_n0358_cy<7 : 3> on block Top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus bc/Msub_n0346_cy<7 : 3> on block Top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus speedup/Maccum_speed_lut<20 : 6> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/Msub_cactus_height[8]_y[1][8]_sub_54_OUT_lut<8 : 0> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/Msub_cactus2_height[8]_y[1][8]_sub_58_OUT_lut<8 : 0> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/Msub_cactus2_height[8]_y[0][8]_sub_23_OUT_lut<8 : 0> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/Msub_cactus_height[8]_y[0][8]_sub_19_OUT_lut<8 : 0> on block Top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus bc/Maddsub_n0394_Madd_cy<6 : 0> on block
+   Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   gnd/GND_24_o_PWR_18_o_mod_2/Madd_a[10]_b[9]_add_21_OUT_cy<7 : 4> on block Top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   gnd/GND_24_o_PWR_18_o_mod_2/Madd_a[10]_GND_25_o_add_23_OUT_Madd_cy<7 : 3> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cld/Madd_n0271_cy<5 : 3> on block Top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   cld/random[9]_PWR_21_o_mod_30/Madd_a[9]_GND_28_o_add_17_OUT_Madd_lut<7 : 5>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   cld/random[9]_PWR_21_o_mod_26/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4 : 2> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   cld/random[9]_PWR_21_o_mod_21/Madd_a[9]_GND_28_o_add_17_OUT_Madd_lut<7 : 5>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   cld/random[9]_PWR_21_o_mod_19/Madd_a[9]_GND_27_o_add_17_OUT_Madd_cy<4 : 2> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cld/Maddsub_n0278_Madd_cy<5 : 0> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cld/Maddsub_n0272_Madd_cy<7 : 0> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus cld/random[9]_PWR_21_o_mod_28_OUT<6 : 2>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/random[8]_PWR_26_o_mod_108/Madd_a[8]_b[7]_add_17_OUT_Madd_lut<8 : 1> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   bc/random[8]_PWR_26_o_mod_101/Madd_a[8]_b[7]_add_17_OUT_Madd_lut<6 : 1> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_41_OUT[20:0]_lut<20 :
+   4> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_41_OUT[20:0]_lut<20 :
+   3> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_41_OUT[20:0]_lut<20 :
+   2> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_39_OUT[20:0]_lut<20 :
+   5> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_39_OUT[20:0]_lut<20 :
+   4> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_39_OUT[20:0]_lut<20 :
+   3> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_37_OUT[20:0]_lut<20 :
+   6> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_37_OUT[20:0]_lut<20 :
+   5> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_37_OUT[20:0]_lut<20 :
+   4> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_35_OUT_lut<20 : 7> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_35_OUT_lut<20 : 6> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_35_OUT_lut<20 : 5> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_33_OUT_lut<20 : 8> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_33_OUT_lut<20 : 7> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_33_OUT_lut<20 : 6> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_31_OUT_lut<20 : 9> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_31_OUT_lut<20 : 8> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_31_OUT_lut<20 : 7> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_29_OUT_lut<16 : 13>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_29_OUT_lut<20 : 9> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_29_OUT_lut<20 : 8> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_27_OUT_lut<17 : 14>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_27_OUT_cy<16 : 12> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_27_OUT_lut<20 : 9> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_14/Madd_a[20]_GND_75_o_add_25_OUT_lut<18 : 15>
+   on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_25_OUT_cy<17 : 13> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_25_OUT_cy<17 : 15> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_23_OUT_cy<18 : 14> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_21_OUT_cy<18 : 15> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_12/Madd_a[20]_GND_74_o_add_19_OUT_cy<18 : 16> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_div_10/Madd_a[20]_GND_73_o_add_17_OUT_cy<18 : 15> on
+   block Top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_14/n1293<20
+   : 5> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_12/n1239<20
+   : 4> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_10/n1203<20
+   : 3> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_14_OUT<10 :
+   1> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_12_OUT<13 :
+   1> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus grade/grade[20]_PWR_32_o_div_10_OUT<16 :
+   1> on block Top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   grade/grade[20]_PWR_32_o_mod_9/Madd_a[20]_GND_72_o_add_17_OUT_Madd_lut<20 :
+   13> on block Top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Top.edif ...
+ngc2edif: Total memory usage is 114204 kilobytes
+

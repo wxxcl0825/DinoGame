@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-28T16:45:27</DateModified>
+  <DateModified>2024-01-06T14:39:46</DateModified>
   <ModuleName>Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/wxxcl/ISE_workspace/DinoGame/iseconfig/Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/wxxcl/ISE_workspace/DinoGame</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/wxxcl/ISE_workspace/DinoGame/</ImplementationReportsDirectory>
   <DateInitialized>2023-12-28T16:45:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
